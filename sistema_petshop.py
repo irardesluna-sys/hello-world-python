@@ -1,5 +1,8 @@
 # Nome do usuário
 
+import sys
+
+
 nome = input("Inseri seu nome completo: ")
 print(f"Bem-vindo ao PetVida,{nome}")
 
@@ -52,4 +55,45 @@ if idade_do_pet >= 1 and vacinacao is True:
     print("Pode usar o hotelzinho")
 else:
     print("Não pode usar o hotelzinho")
+
+# Grupo de Risco
+
+if idade_do_pet > 10 and peso_do_pet < 2:
+    print("Seu Pet está no grupo de Risco")
+
+ # Serviço
+
+servico = input("Qual serviço você deseja para seu pet ? ")
+
+if not servico: 
+    print("Dado Inválido")
+    sys.exit() # Para o programa aqui
+else:
+    print("Ok, seguiremos com o atendimento.")
+
+# Telefone do Cliente
+
+telefone = input("Qual o seu telefone")
+
+if not telefone:
+    print("Dado Inválido")
+else:
+    print("Vamos para próxima fase do atendimento.")
+
+#Tipo do Pet
+
+tipo_de_pet = int(input("Considerando que Cachorro > 1, Gato > 2 e Aves > 3, qual número corresponde ao seu animal ? "))
+
+if tipo_de_pet == 1:
+    print("Vamos seguir com o atendimento do seu Cachorro")
+elif tipo_de_pet == 2:
+    print("Vamos Seguir com o atendimento do seu gato")
+elif tipo_de_pet == 3:
+    print("Vamos seguir com o atendimento da sua ave")
+else:
+    print("Animal inválido")
+    sys.exit() # Para o programa aqui
+
+# Plano do cliente 
+
 
